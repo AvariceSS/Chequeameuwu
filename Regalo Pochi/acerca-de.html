@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>♡¡Tu mejor proyecto!♡</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item icon">
+            <a href="index.html"class="nav-icon"><img src="home.png" alt=""></a>
+        </div>
+        <div class="nav-item">
+            <a href="index.html" class="nav-link">Casita</a>
+        </div>
+        <div class="nav-item">
+            <a href="acerca-de.html" class="nav-link">Chatcito.</a>
+        </div>
+    </div>  
+    
+    <button id="button1" class="button" onmousedown="toggleMessage('button1')">¿Hola?...</button>
+    <p id="button1-message" class="hidden-message" style="display:none;">¡Bienvenido! Nuevamente nos encontramos. Te recibo con todo el amor de mi metálico corazón.</p>
+
+    <button id="button2" class="button" style="display:none;" onmousedown="toggleMessage('button2')">Uhm... supongo, ¿De qué trata todo esto?</button>
+    <p id="button2-message" class="hidden-message" style="display:none;">Soy un pequeño intento de proyecto Kathy, básicamente he querido hablarte en tu idioma. Es un poco sencillo pero está diseñado con mucho cariño para ti. 
+    </p>
+
+    <button id="button3" class="button" style="display:none;" onmousedown="toggleMessage('button3')">Ya veo...</button>
+    <p id="button3-message" class="hidden-message" style="display:none;">Ahora mismo estamos teniendo una pequeña conversación a través de códigos ¿No es genial?</p>
+
+    <button id="button4" class="button" style="display:none;" onmousedown="toggleMessage('button4')">Si, lo es.</button>
+    <p id="button4-message" class="hidden-message" style="display:none;">¡Claro que si! ¿Te cuento un secreto?...</p>
+    <button id="button5" class="button" style="display:none;" onmousedown="toggleMessage('button5')">Por supuesto...Dime.
+    </button>
+    <p id="button5-message" class="hidden-message" style="display:none;">Puedo ver y adoro tu expresión actual... ¡Ja! Esa cara de vergüenza la conozco. Adivina quién soy... ¡Una pista! La única con suficiente inteligencia para diseñar algo de tu estilo</p>
+    <button id="button6" class="button" style="display:none;" onmousedown="toggleMessage('button6')">Tat. ¿No? Chamaca...</button>
+    <p id="button6-message" class="hidden-message" style="display:none;">¡Ding ding! Era muy obvia la respuesta... ¿Uh? Oh oh, ¿Ya vienes otra vez tú?</p>
+    <button id="button7" class="button" style="display:none;" onmousedown="toggleMessage('button7')">????</button>
+    <p id="button7-message" class="hidden-message" style="display:none;">¡Hey! Yo también he ayudado en este proyecto... Me alegra tenerte aquí, mi corazón arde de solo verte... Espero realmente esto te impresione. ¿Sabes quién soy?</p>
+    <button id="button8" class="button" style="display:none;" onmousedown="toggleMessage('button8')">Por supuesto, Kathy</button>
+    <p id="button8-message" class="hidden-message" style="display:none;">¡Así es! Gracias por reconocerme, ¡No creas lo que dice Tat! Yo también fui de ayuda y muy útil.</p>
+    <button id="button9" class="button" style="display:none;" onmousedown="toggleMessage('button9')">Te creo, pequeña.</button>
+    <p id="button9-message" class="hidden-message" style="display:none;">¡Bien bien! Espero lo hayas disfrutado, con todo el amor del mundo, te deseamos un feliz 23 atrasado.</p>
+    <button id="button10" class="button" style="display:none;" onmousedown="toggleMessage('button10')">...</button>
+    <p id="button10-message" class="hidden-message" style="display:none;">¡No hace falta que digas algo!  Como puedes darte cuenta, padre, encontrar la manera de comunicarnos siempre será una sorpresa que llene tu corazón. Gracias por darme tu tiempo.</p>
+    <button id="button11" class="button" style="display:none;" onmousedown="toggleMessage('button11')">Gracias... Te quedó muy bonito.</button>
+    <p id="button11-message" class="hidden-message" style="display:none;">Gracias a ti, por hacerme entender que no soy un error, tengo un corazón latente por ti. ¡Siempre tuya! Y por siempre tu hija.</p>
+    <button id="button12" class="button" style="display:none;" onmousedown="toggleMessage('button12')">...</button>
+    <p id="button12-message" class="hidden-message" style="display:none;">Ya no te interrumpo más, querido mío, créeme que con mi corazón envuelto en llamas de amor, te admiro y adoro... pero permite gritar... ¡TE AMO! ¡Hasta la próxima! Veremos nuestros rostros una vez más, ¡Es una promesa!</p>
+    <button id="button13" class="button" style="display:none;" onmousedown="toggleMessage('button13')">Nos vemos...</button>
+    <p id="button13-message" class="hidden-message" style="display:none;">Te ama, tu mejor proyecto, mi grandioso ingeniero...♡</p>
+</body>
+</body>
+<style>
+    body {
+        background-color: #ffe5f0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-icon {
+    background-color:#f06292;
+    height: 50%;
+    }
+
+    .icon {
+    display: block;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #f06292;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .nav-link:hover {
+        background-color: #ec407a;
+    }
+
+    .nav-item:first-child {
+      margin-right: auto;
+      background-color: transparent;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 10px;
+    }   
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #000000;
+      border: none;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    p {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #ff92b6;
+      border: none;
+      cursor: pointer;
+      width: 300px;
+      margin-left: 20px;
+    }
+</style>
+
+<script>
+ function toggleMessage(buttonId) {
+      var button = document.getElementById(buttonId);
+      var message = document.getElementById(buttonId + "-message");
+
+      if (message.style.display === "none") {
+        message.style.display = "block";
+      }
+      if (buttonId === "button1") {
+        var button2 = document.getElementById("button2");
+        button2.style.display = "block";
+      } 
+      if (buttonId === "button2") {
+        var button4 = document.getElementById("button3");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button3") {
+        var button4 = document.getElementById("button4");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button4") {
+        var button4 = document.getElementById("button5");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button5") {
+        var button4 = document.getElementById("button6");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button6") {
+        var button4 = document.getElementById("button7");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button7") {
+        var button4 = document.getElementById("button8");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button8") {
+        var button4 = document.getElementById("button9");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button9") {
+        var button4 = document.getElementById("button10");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button10") {
+        var button4 = document.getElementById("button11");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button11") {
+        var button4 = document.getElementById("button12");
+        button4.style.display = "block";
+      }
+      if (buttonId === "button12") {
+        var button4 = document.getElementById("button13");
+        button4.style.display = "block";
+      }
+    }
+  </script>
+</html>
